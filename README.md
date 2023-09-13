@@ -12,6 +12,7 @@ YouTube: https://www.youtube.com/channel/UCvg3acev601KJwv7j4EpbSg/featured
 Todo:
 
 [X] Update to pocketmine 5.0.0.
+
 [] Add item stack count.
 
 [] Make the stack size configurable through the config.yml.
