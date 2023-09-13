@@ -1,3 +1,5 @@
+<?php
+
 namespace david\itemStacker;
 
 use pocketmine\entity\object\ItemEntity;
