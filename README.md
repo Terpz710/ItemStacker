@@ -3,7 +3,7 @@ A plugin stacks items when they spawn.
 
 # Credits
 
-This plugin isnt created by me(Terpz710) instead im updating/adding new features since the dev went offline.
+This plugin isnt created by me(Terpz710) instead by DavidGamingzz. Im updating/adding new features since the dev went offline.
 
 YouTube: https://www.youtube.com/channel/UCvg3acev601KJwv7j4EpbSg/featured
 
