@@ -9,7 +9,6 @@ use pocketmine\event\Listener;
 class EventListener implements Listener {
 
     public function __construct() {
-        
     }
 
     public function onEntitySpawn(EntitySpawnEvent $event) {
