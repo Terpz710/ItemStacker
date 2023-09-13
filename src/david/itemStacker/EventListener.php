@@ -1,5 +1,3 @@
-<?php
-
 namespace david\itemStacker;
 
 use pocketmine\entity\object\ItemEntity;
@@ -7,6 +5,10 @@ use pocketmine\event\entity\EntitySpawnEvent;
 use pocketmine\event\Listener;
 
 class EventListener implements Listener {
+
+    public function __construct() {
+        
+    }
 
     public function onEntitySpawn(EntitySpawnEvent $event) {
         $entity = $event->getEntity();
