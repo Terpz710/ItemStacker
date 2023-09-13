@@ -6,4 +6,5 @@ projects:
   ItemStacker:
     path: ""
     icon: "icon.png" 
+    lint: false
 ...
