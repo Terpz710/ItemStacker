@@ -8,9 +8,6 @@ use pocketmine\event\Listener;
 
 class EventListener implements Listener {
 
-    public function __construct(Loader $plugin); 
-    }
-
     public function onEntitySpawn(EntitySpawnEvent $event) {
         $entity = $event->getEntity();
         if (!$entity instanceof ItemEntity) {
