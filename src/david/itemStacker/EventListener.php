@@ -25,16 +25,18 @@ class EventListener implements Listener {
      */
     public function onEntitySpawn(EntitySpawnEvent $event) {
         $entity = $event->getEntity();
-        $entities = $entity->getLevel()->getNearbyEntities($entity->getBoundingBox()->expandedCopy(5, 5, 5));
-        if(empty($entities)) {
-            return;
-        }
-        if($entity instanceof ItemEntity) {
+        if ($entity instanceof ItemEntity) {
+            $position = $entity->getPosition();
+            $world = $position->getWorld();
+            $entities = $world->getNearbyEntities($entity->getBoundingBox()->expandedCopy(5, 5, 5));
+            if (empty($entities)) {
+                return;
+            }
             $originalItem = $entity->getItem();
-            foreach($entities as $e) {
-                if($e instanceof ItemEntity and $entity->getId() !== $e->getId()) {
+            foreach ($entities as $e) {
+                if ($e instanceof ItemEntity && $entity->getId() !== $e->getId()) {
                     $item = $e->getItem();
-                    if($item->getId() === $originalItem->getId()) {
+                    if ($item->getId() === $originalItem->getId()) {
                         $e->flagForDespawn();
                         $entity->getItem()->setCount($originalItem->getCount() + $item->getCount());
                     }
