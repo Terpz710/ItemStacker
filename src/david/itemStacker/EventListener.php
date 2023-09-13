@@ -32,10 +32,10 @@ class EventListener implements Listener {
         $originalItem = $entity->getItem();
         foreach ($entities as $e) {
             if ($e instanceof ItemEntity && $entity !== $e) {
-                $item = $e->getItem();
-                if ($item->equals($originalItem)) {
+                $itemE = $e->getItem();
+                if ($itemE->equals($originalItem)) {
                     $e->flagForDespawn();
-                    $entity->getItem()->setCount($originalItem->getCount() + $item->getCount());
+                    $originalItem->setCount($originalItem->getCount() + $itemE->getCount());
                 }
             }
         }
