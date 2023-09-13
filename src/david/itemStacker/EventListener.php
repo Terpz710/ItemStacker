@@ -7,8 +7,7 @@ use pocketmine\event\entity\EntitySpawnEvent;
 use pocketmine\event\Listener;
 
 class EventListener implements Listener {
-
-    /** @var Loader */
+    
     private $plugin;
 
     public function __construct(Loader $plugin) {
