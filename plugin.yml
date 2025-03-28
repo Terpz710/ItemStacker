@@ -1,8 +1,6 @@
 name: ItemStacker
-main: david\itemStacker\Loader
-load: STARTUP
-version: "1.0.2"
-api: 5.0.0
+version: 1.0.3
 authors:
 - David, Terpz710
-description: Stack item entities
+api: 5.0.0
+main: david\itemStacker\Loader
