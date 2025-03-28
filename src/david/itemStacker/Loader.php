@@ -1,6 +1,6 @@
 <?php
 
-declare(strict
+declare(strict_types=1);
 
 namespace david\itemStacker;
 
