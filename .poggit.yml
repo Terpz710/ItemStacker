@@ -6,5 +6,8 @@ projects:
   ItemStacker:
     path: ""
     icon: "icon.png" 
-    lint: true
+    libs:
+      - src: DaPigGuy/libPiggyUpdateChecker/libPiggyUpdateChecker
+        version: ^1.0.0
+    lint: false
 ...
